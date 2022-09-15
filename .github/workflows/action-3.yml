@@ -1,18 +1,15 @@
-name: Events exercices
+name: Git Action 3
 
 on:
   push:
     branches:
       - dev
-      - feat/**
-    paths:
-      - 'public/**'
-      - '**.ts'
+      - feat/feature1
     branches-ignore:
       - staging
-
-
+  
 jobs:
+
   print-event:
     runs-on: ubuntu-latest
 

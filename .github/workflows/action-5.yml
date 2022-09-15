@@ -1,18 +1,16 @@
-name: Events exercices
+name: Git Action 5
 
 on:
   push:
     branches:
       - dev
+      - staging
       - feat/**
     paths:
-      - 'public/**'
       - '**.ts'
-    branches-ignore:
-      - staging
-
-
+  
 jobs:
+
   print-event:
     runs-on: ubuntu-latest
 

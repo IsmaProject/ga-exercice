@@ -1,18 +1,11 @@
-name: Events exercices
+name: Git Action 9
 
 on:
-  push:
-    branches:
-      - dev
-      - feat/**
-    paths:
-      - 'public/**'
-      - '**.ts'
-    branches-ignore:
-      - staging
-
-
+  schedule:
+    - cron: '*/5 * * * *'
+  
 jobs:
+
   print-event:
     runs-on: ubuntu-latest
 
